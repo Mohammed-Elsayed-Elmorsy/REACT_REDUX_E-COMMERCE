@@ -1,0 +1,96 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    box-shadow: 0 0 12px #ddd;
+    margin-bottom: 3px;
+}
+
+.hero {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 142px);
+    /* text-align: center; */
+    color: white;
+    background: url('../src/assets/4.jpeg') center /cover;
+}
+
+.hero div {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.products {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.products .product {
+    padding: 20px;
+    border: 0;
+    box-shadow: 0 0 12px #ddd;
+}
+
+.latest {
+    border-bottom: 1px solid #DDD;
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+span i {
+    cursor: pointer;
+}
+
+.fa-minus {
+    background-color: #e91f1f4c;
+}
+
+.fa-plus {
+    background-color: #0d6ce363;
+}
+
+.fa-plus:active,
+.fa-minus:active {
+    transform: scale(.94);
+}
